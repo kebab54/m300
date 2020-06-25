@@ -63,6 +63,7 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
+
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
   config.vm.network "forwarded_port", guest: 8080, host: 8080
@@ -71,8 +72,7 @@ Vagrant.configure("2") do |config|
     vb.cpus = 2
     vb.memory = "4096"
   end
-config.vm.provision "shell", inline: <<-SHELL
-   apt-get update
-   apt-get install -y apache2
+config.vm.provision "shell" do |shell|
+    shell.path = "setupscript.sh"
  SHELL
 end
