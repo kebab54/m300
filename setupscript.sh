@@ -1,7 +1,8 @@
 #Hinzufügen von Jenkins Repository, 
 
-wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
-sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+    /etc/apt/sources.list.d/jenkins.list'
 #apt update und upgrade
 sudo apt-get update && sudo apt-get upgrade
 #Java installieren
@@ -18,6 +19,5 @@ sudo service jenkins start
 sleep 1m
 
 #jenkins initialpasswort ausgeben
-jenkinsdefpw=$ (sudo cat /var/lib/jenkins/secrets/initialAdminPassword)
-echo Jenkins Initialpasswort: 
-echo $jenkinsdefpw
+echo Jenkins Initialpasswort
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
