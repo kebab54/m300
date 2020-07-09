@@ -1,7 +1,6 @@
 # m300 LB2
-## Linux
-Typischerweise open source betriebssysteme basierend auf dem Linux Kernel. Es gibt dabei verschiedene Distributionen und Linux Derivate. 
-Da Linux Open source ist, hat jeder die möglichkeit den Code nach freiem willen zu ändern. 
+## Docker
+Docker ist eine software die es ermöglich container zu erstellen und verwalten. Dies wird auch Containervirtualierung genannt. Im gegenzug zu Servervirtualisierung wird bei Containervirtualisierung nicht die Hardwareschicht abstrahiert, sondern die Betriebssystemschicht. 
 ## Virtualisierung 
 Abstrahierung der Hardware eines Servers. Bei der Virtualisierung wird die Physische Hardware eines Servers von einem VMM/Hypervisor verwaltet und wird auf mehrere Virtuelle Maschinen. Der Hypervisor erlaubt es Hardwareressourcen einer VM zuzuteilen. 
 Die hauptsächlichen vorteile der virtualisierung ist die effizientere Nutzung von Hardwareressourcen. So wird Strom, Platz und somit auch Geld gespart. 
