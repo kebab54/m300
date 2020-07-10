@@ -6,6 +6,7 @@ steps:
          '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$SHORT_SHA',
          '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME:latest',
          '-f', 'Dockerfile', '.']
+    env: ['PROJECT_ROOT=github.com/kebab8902/m300/tree/master/LB3/GCB/src']
 images:
   - 'gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$SHORT_SHA'
   - 'gcr.io/$PROJECT_ID/$REPO_NAME:latest'
