@@ -111,7 +111,7 @@ Anschliessend wird die Applikation asgeführt
 Ich habe das dockerfile anschliessend mit einem dockerfile eines anderen dummy apps ersetzt. Die funktion ist jedoch ähnlich. Jedoch ist es kein Multistage dockerfile mehr, sondern das multistage building wird ausgelagert in ein cloudbuild.yml file. 
 
 ### Probleme
-Ich hatte das grösste problem dabei die Builds hinzukriegen. Momentan bin ich an folgendem problem. Bei jedem build erhalte ich den fehler manifest unknown: Failed to fetch "latest" 
+Ich hatte das grösste problem dabei die Builds hinzukriegen. Momentan bin ich an folgendem problem. Bei jedem build erhalte ich momentan Fehler. 
 
 
 ## Container Registry
